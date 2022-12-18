@@ -6,7 +6,7 @@ export class Content {
   }
 
   private validadeContentLength(content:string): boolean{
-    return content.length <= 5 && content.length>=249;
+    return content.length >= 5 && content.length <= 249;
   }
   constructor(content:string){
     const validationContent = this.validadeContentLength(content)
